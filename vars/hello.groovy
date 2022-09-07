@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-
-def call(String name = 'default',String dayOfWeek) {
-  echo "Hello, ${name}. Today is ${dayOfWeek}"
+#String name = 'default',String dayOfWeek
+def call(Map config=[:]) {
+  echo "Hello, ${config.name}. Today is ${config.dayOfWeek}"
 }
