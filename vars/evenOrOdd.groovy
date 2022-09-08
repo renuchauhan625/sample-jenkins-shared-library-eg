@@ -11,17 +11,16 @@ def call(int buildNumber){
             }
         }
     }
-else{
-    pipeline{
-        agent any
-        stages{
-            stage("odd number"){
-                steps{
-                    echo "The Build number is Odd"
+    else{
+        pipeline{
+            agent any
+            stages{
+                stage("odd number"){
+                    steps{
+                        echo "The Build number is Odd"
+                    }
                 }
             }
         }
-        
     }
-}
 }
