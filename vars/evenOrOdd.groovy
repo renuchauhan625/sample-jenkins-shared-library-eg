@@ -17,7 +17,7 @@ else{
         stages{
             stage("odd number"){
                 steps{
-                    "The Build number is Odd"
+                    echo "The Build number is Odd"
                 }
             }
         }
